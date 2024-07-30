@@ -1,0 +1,21 @@
+{
+  "name": "rit-api-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/main.js"
+  },
+  "author": "GuglioIsStupid",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pocketbase": "^0.21.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.11"
+  },
+  "type": "module"
+}
