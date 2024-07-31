@@ -3,11 +3,13 @@ import 'dotenv/config'
 
 const pb = new PocketBase('http://127.0.0.1:8090');
 
-// list and filter "example" collection records
-const result = await pb.collection('users').getFullList({
-    headers: {
-        "id": process.env.AUTH_TOKEN
-    }
-})
+async function main() {
+    // List and filter "users" collection records
+    const result = await pb.collection('users').getFullList();
+    console.log(result);
 
-console.log(result)
+    // Keep the script running
+    setInterval(() => {}, 1000); // Keeps the event loop busy
+}
+
+main();
